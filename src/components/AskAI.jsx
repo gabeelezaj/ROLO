@@ -101,7 +101,7 @@ Guidelines:
       console.error('Chat error:', err);
       const fallbackMsg = err.name === 'AbortError'
         ? 'Request timed out. Try a simpler question or check your connection.'
-        : 'I couldn\'t process that right now. Make sure your API key is set in .env as VITE_ANTHROPIC_API_KEY.';
+        : 'Ask AI needs an API key, so it\'s off in this demo. Run Rolo locally with your own key to use it.';
       setMessages(prev => [...prev, { role: 'assistant', content: fallbackMsg }]);
     } finally {
       setIsLoading(false);

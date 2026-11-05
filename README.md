@@ -1,5 +1,9 @@
 # Rolo
 
+Winner of the Greyscale Hackathon.
+
+**Live demo:** https://gabeelezaj.github.io/ROLO/
+
 **Rolo** (short for Rolodex) is an AI-powered personal relationship manager. Tell it about the people in your life out loud, and it turns what you say into contact profiles, notices when a relationship starts to drift, and suggests specific ways to reconnect: a text to send, a call to make, a hangout to plan.
 
 Built by Alexander Baig and Gabriel Elezaj. This repository is a fork of [AlexanderB123-ai/ROLO](https://github.com/AlexanderB123-ai/ROLO), where the project was developed.
@@ -29,7 +33,7 @@ npm run dev
 
 Voice input needs a browser that supports the Web Speech API, such as Chrome, Edge or Safari.
 
-Without an API key the app still runs: voice capture and outreach suggestions fall back to built-in sample responses, and Ask Rolo shows an error instead of an answer.
+Without an API key the app still runs: voice capture and outreach suggestions fall back to built-in sample responses, and Ask Rolo says it needs a key.
 
 Other scripts:
 
@@ -41,5 +45,5 @@ npm run lint
 
 ## Notes
 
-- Rolo is a prototype. The API key is bundled into the browser build, so use a restricted or throwaway key, and do not deploy a build that contains a key you care about.
-- The site is built for GitHub Pages under the `/ROLO/` base path (see `vite.config.js` and `.github/workflows/deploy.yml`). The original deployment is at https://alexanderb123-ai.github.io/ROLO/.
+- Rolo is a prototype. The API key is bundled into the browser build, so keep real keys in your local `.env` and never deploy a build that contains one. The GitHub Pages workflow builds without a key, so the live demo uses the sample responses described above.
+- The site is built for GitHub Pages under the `/ROLO/` base path (see `vite.config.js` and `.github/workflows/deploy.yml`).

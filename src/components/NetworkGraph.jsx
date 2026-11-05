@@ -269,7 +269,7 @@ Guidelines:
       console.error('Chat error:', err);
       setMessages(prev => [...prev, {
         role: 'assistant',
-        content: 'Sorry, I couldn\'t process that. Make sure your API key is set in .env as VITE_ANTHROPIC_API_KEY.'
+        content: 'This chat needs an API key, so it\'s off in this demo. Run Rolo locally with your own key to use it.'
       }]);
     } finally {
       setIsLoading(false);
